@@ -62,6 +62,22 @@ body {
 }
 
 @media screen and (max-width: 1000px) {
+  .bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background: none;
+    background: linear-gradient(
+        to bottom right,
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url('./img/hero-small.jpg') center center/cover no-repeat !important;
+    z-index: -900;
+  }
+
   .main-heading {
     font-size: 4rem;
   }
