@@ -69,6 +69,11 @@ body {
   .city-input {
     width: 60%;
   }
+
+  .error {
+    width: 60%;
+    font-size: 2rem;
+  }
 }
 
 @media screen and (max-width: 550px) {
@@ -94,6 +99,10 @@ body {
 
 @media screen and (max-width: 435px) {
   .city-input {
+    width: 100%;
+  }
+
+  .error {
     width: 100%;
   }
 
