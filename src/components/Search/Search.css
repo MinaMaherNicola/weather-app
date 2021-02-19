@@ -1,0 +1,34 @@
+/* .search-container {
+  margin: auto;
+  margin-top: 5rem;
+  border: 1px solid white;
+  width: 70%;
+  height: 60vh;
+  padding: 3rem;
+} */
+
+.city-input {
+  display: block;
+  margin: auto;
+  padding: 1rem 1rem;
+  width: 50rem;
+  /* height: 3rem; */
+  border: none;
+  outline: none;
+  /* border-radius: 4rem; */
+  transition: all 0.5s ease;
+  margin-top: 2rem;
+  box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.5);
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+.city-input:focus {
+  transform: translateY(-1rem);
+  box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.5);
+}
+
+.city-input:focus::placeholder {
+  color: white;
+}
