@@ -11,6 +11,10 @@ html {
   font-size: 62.5%;
 }
 
+body {
+  color: white;
+}
+
 .container {
   width: 80%;
   margin: auto;
@@ -55,4 +59,89 @@ html {
   width: 70%;
   height: 60vh;
   padding: 3rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .main-heading {
+    font-size: 4rem;
+  }
+
+  .city-input {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .data {
+    font-size: 2rem;
+  }
+
+  .temp {
+    font-size: 5rem;
+    font-weight: 300;
+  }
+
+  .weather-desc {
+    font-size: 2rem;
+    font-weight: 300;
+  }
+
+  .main-heading {
+    font-size: 2rem;
+    font-weight: 300;
+  }
+}
+
+@media screen and (max-width: 435px) {
+  .city-input {
+    width: 100%;
+  }
+
+  .data {
+    display: flex;
+    flex-flow: column;
+  }
+
+  .temp {
+    padding: 0;
+    border: none;
+    border-bottom: 1px solid white;
+    padding-bottom: 1rem;
+    margin: 0;
+  }
+
+  .main-heading {
+    font-size: 1.7rem;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .weather-display {
+    margin-top: 1rem;
+  }
+
+  .temp {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-height: 640px) {
+  .city-info {
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .city-name {
+    margin-bottom: 0;
+    margin-right: 1rem;
+  }
+
+  .weather-desc {
+    margin-top: 0.5rem;
+  }
+
+  .weather-display {
+    margin-top: 2rem;
+  }
 }

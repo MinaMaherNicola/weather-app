@@ -1,0 +1,49 @@
+.weather-display {
+  margin-top: 10rem;
+}
+
+.data {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+
+.temp {
+  font-size: 7rem;
+  font-weight: 100;
+  border-right: 1px solid white;
+  padding-right: 3rem;
+  margin-right: 3rem;
+}
+
+.weather-desc {
+  font-size: 3rem;
+  font-weight: 100;
+  margin-top: 1rem;
+}
+
+.city-info {
+  font-size: 1.7rem;
+  font-weight: 300;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.city-name {
+  margin-bottom: 1.5rem;
+}
+
+.error {
+  text-align: center;
+  font-size: 3rem;
+  margin: auto;
+  margin-top: 3rem;
+  font-weight: 200;
+  border: 1px solid red;
+  padding: 1rem;
+  width: 50rem;
+}

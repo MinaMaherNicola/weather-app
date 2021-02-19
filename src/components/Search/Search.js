@@ -1,39 +1,31 @@
 import React, { useEffect, useState } from 'react';
 import './Search.css';
-import getWeather from './../../api/getWeather';
 
-const Search = () => {
+const Search = (props) => {
   const [term, setTerm] = useState('');
-  const [weather, setWeather] = useState({});
-  const onInputChange = (e) => {
+
+  const onTermChange = (e) => {
     setTerm(e.target.value);
   };
 
   useEffect(() => {
-    const timeoutID = setTimeout(() => {
-      const fetchData = async () => {
-        if (term) {
-          const data = await getWeather(term);
-          setWeather(data.data);
-          console.log(weather);
-        }
-      };
-
-      fetchData();
+    const timeID = setTimeout(() => {
+      if (term) {
+        props.exchangeTerm(term);
+      }
     }, 500);
 
     return () => {
-      clearTimeout(timeoutID);
+      clearTimeout(timeID);
     };
   }, [term]);
-
   return (
     <div className="search-container">
       <input
-        onChange={onInputChange}
+        onChange={onTermChange}
         className="city-input"
         type="text"
-        placeholder="Enter a City Name"
+        placeholder="City Name"
       />
     </div>
   );
